@@ -39,9 +39,6 @@ class App extends Component {
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
-          <main style={{marginTop: '64px'}}>
-          </main>
-       
         <Switch>
           <Route exact path="/" component={Inicio}/>
           <Route exact path="/Inicio" component={Inicio}/>

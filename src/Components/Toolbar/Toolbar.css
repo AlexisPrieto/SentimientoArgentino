@@ -1,10 +1,11 @@
 .toolbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to right top, #0575E6, #021B79 );/* #521751;*/
-    height: 56px;
+    background: linear-gradient(to right top, #3594f5, #010d3e );/* #521751;*/
+    height: 80px;
+    z-index:10; /*<--- crack*/
   }
   
   .toolbar__navigation {
@@ -21,7 +22,8 @@
   .toolbar__logo a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
   }
   
   .spacer {
@@ -42,6 +44,7 @@
   .toolbar_navigation-items a {
     color: white;
     text-decoration: none;
+    font-size: 20px;
   }
   
   .toolbar_navigation-items a:hover,
