@@ -6,16 +6,19 @@ import img1 from '../../Assets/Img/Inicio/1.jpg'
 import img2 from '../../Assets/Img/Inicio/2.jpeg'
 import img3 from '../../Assets/Img/Inicio/3.jpg'
 import '../../App.css'
+import i18n from '../../i18n'
+
 
 export class Inicio extends Component {
     render() {
         return (
+            
             <div>
                 <Carousel infiniteLoop useKeyboardArrows /*autoPlay*/ showStatus={false} showThumbs={false} dynamicHeight>
                     <div>
                         <img src={img0}/>
                         <div>
-                            <h2 className="Slider-Title"> Excelencia en Cortes Argentinos </h2>
+                            <h2 className="Slider-Title"> {i18n.t('Inicio_Title.1')} </h2>
                             <p className="Slider-Subtitle">
                             Ahora podrán disfrutar de un rico asado bien completo o comer unas ricas milanesas sin tener que moverse de sus casas y sin tener que pagar una fortuna por ello...</p>
                         </div>

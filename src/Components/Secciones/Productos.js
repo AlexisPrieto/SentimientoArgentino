@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
-import filterFactory, { selectFilter } from 'react-bootstrap-table2-filter';
+import filterFactory, { selectFilter, multiSelectFilter,  textFilter} from 'react-bootstrap-table2-filter';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 
 export class Productos extends Component {
 
@@ -11,7 +14,7 @@ export class Productos extends Component {
             Precio: 24,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:2,
@@ -19,7 +22,7 @@ export class Productos extends Component {
             Precio:26,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:3,
@@ -27,7 +30,7 @@ export class Productos extends Component {
             Precio:26,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Embutidos',
+            Rubro: 1,
         },
         {
             Interno:4,
@@ -35,7 +38,7 @@ export class Productos extends Component {
             Precio:20,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Embutidos',
+            Rubro: 1,
         },
         {
             Interno:5,
@@ -43,7 +46,7 @@ export class Productos extends Component {
             Precio:26,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:6,
@@ -51,7 +54,7 @@ export class Productos extends Component {
             Precio:20,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:7,
@@ -59,7 +62,7 @@ export class Productos extends Component {
             Precio:23,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:8,
@@ -67,7 +70,7 @@ export class Productos extends Component {
             Precio:38,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:9,
@@ -75,7 +78,7 @@ export class Productos extends Component {
             Precio:42,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:10,
@@ -83,7 +86,7 @@ export class Productos extends Component {
             Precio:18,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:11,
@@ -91,7 +94,7 @@ export class Productos extends Component {
             Precio:39,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:12,
@@ -99,7 +102,7 @@ export class Productos extends Component {
             Precio:21,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:13,
@@ -107,7 +110,7 @@ export class Productos extends Component {
             Precio:23,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:14,
@@ -115,7 +118,7 @@ export class Productos extends Component {
             Precio:22,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:15,
@@ -123,7 +126,7 @@ export class Productos extends Component {
             Precio:36,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:16,
@@ -131,7 +134,7 @@ export class Productos extends Component {
             Precio:50,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:17,
@@ -139,7 +142,7 @@ export class Productos extends Component {
             Precio:56,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:18,
@@ -147,7 +150,7 @@ export class Productos extends Component {
             Precio:78,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:19,
@@ -155,7 +158,7 @@ export class Productos extends Component {
             Precio:44,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:20,
@@ -163,7 +166,7 @@ export class Productos extends Component {
             Precio:24,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Carne',
+            Rubro: 0,
         },
         {
             Interno:21,
@@ -171,7 +174,15 @@ export class Productos extends Component {
             Precio:23,
             Detalle:'detalles...',
             Imagen:'Img...',
-            Rubro: 'Otros',
+            Rubro: 3,
+        },
+        {
+            Interno:22,
+            Nombre:'Yerba',    
+            Precio:23,
+            Detalle:'detalles...',
+            Imagen:'Img...',
+            Rubro: 2,
         }
      ];
 
@@ -179,10 +190,10 @@ export class Productos extends Component {
     render() {
 
         const selectOptions = {
-            Carne: 'Carne',
-            Embutidos: 'Embutidos',
-            Yerbas: 'Yerbas',
-            Otros: 'Otros'
+            0: 'Carne',
+            1: 'Embutidos',
+            2: 'Yerbas',
+            3: 'Otros',
           };
 
 
@@ -211,23 +222,21 @@ export class Productos extends Component {
             {
                 dataField: 'Detalle',
                 text: 'Detalle',
-                sort: true
             },
             {
                 dataField: 'Imagen',
                 text: 'Imagen',
-                sort: true
             },
             {
                 dataField: 'Rubro',
-                text: '',
+                text: 'Rubro',
                 formatter: cell => selectOptions[cell],
                 filter: 
-                selectFilter({
-                    options: selectOptions,
-                    placeholder: 'Seleccionar',
-                    title:'Rubro',
-                })
+                    selectFilter({
+                        options: selectOptions,
+                        placeholder: 'Todos',
+                        withoutEmptyOption: false,
+                    })
             }];
 
 

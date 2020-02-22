@@ -3,6 +3,7 @@ import React from 'react';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import './Toolbar.css';
 import {Link} from 'react-router-dom';
+import i18n from 'i18next';
 
 const toolbar = props => (
   <header className="toolbar">
@@ -18,6 +19,12 @@ const toolbar = props => (
                 <li><Link to="/Productos">Productos</Link></li>
                 <li><Link to="/Pedidos">Pedidos</Link></li>
                 <li><Link to="/Galeria">Galeria</Link></li>
+                <button onclick={i18n.changeLanguage('es')}>
+                  Es
+                </button>
+                <button onclick={i18n.changeLanguage('fr')}>
+                  Fr
+                </button>
             </ul>
         </div>
     </nav>
