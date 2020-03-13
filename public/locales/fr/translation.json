@@ -1,0 +1,92 @@
+{
+    "Menu":{
+    "Inicio": "Inicio",
+    "Productos": "Productos",
+    "Pedidos": "Pedidos",
+    "Galeria": "Galeria"
+    },
+
+    "Inicio":{
+        "Title": "FR-Excelencia en Cortes Argentinos",
+        "SubTitle": "FR-Ahora podrán disfrutar de un rico asado bien completo o comer unas ricas milanesas sin tener que moverse de sus casas y sin tener que pagar una fortuna por ello..."
+    },
+
+    "Productos":{
+
+        "Productos": "Productos - FR",
+
+        "Tira de Asado": "Tira de Asado-FR",    
+        "Detalle1":"detalles...",
+            
+        "Vacio":"Vacio",
+        "Detalle2":"detalles...",
+
+        "Chorizo":"Chorizo",
+        "Detalle3":"detalles...",
+
+        "Morcilla":"Morcilla",
+        "Detalle4":"detalles...",
+
+        "Molleja":"Molleja",
+        "Detalle5":"detalles...",
+
+        "Chinchulin":"Chinchulin",
+        "Detalle6":"detalles...",
+
+        "Entraña":"Entraña",
+        "Detalle7":"detalles...",
+
+        "Colita de cuadril":"Colita de cuadril",
+        "Detalle8":"detalles...",
+
+        "Tapa de Cuadril (Picaña/Picanha)":"Tapa de Cuadril (Picaña/Picanha)",
+        "Detalle9":"detalles...",
+
+        "Bondiola de cerdo":"Bondiola de cerdo",
+        "Detalle10":"detalles...",
+
+        "Pierna de cordero":"Pierna de cordero",
+        "Detalle11":"detalles...",
+
+        "Carne picada especial empanadas":"Carne picada especial empanadas",
+        "Detalle12":"detalles...",
+
+        "Matambre de Vaca":"Matambre de Vaca",
+        "Detalle13":"detalles...",
+
+        "Matambrito de Cerdo":"Matambrito de Cerdo",
+        "Detalle14":"detalles...",
+
+        "Peceto ":"Peceto ",
+        "Detalle15":"detalles...",
+
+        "Ojo de Bife":"Ojo de Bife",
+        "Detalle16":"detalles...",
+
+        "Entrecote (origen Argentina)":"Entrecote (origen Argentina)",
+        "Detalle17":"detalles...",
+
+        "Lomo (origen Argentina)":"Lomo (origen Argentina)",
+        "Detalle18":"detalles...",
+
+        "Milanesa ":"Milanesa ",
+        "Detalle19":"detalles...",
+
+        "Costillar de cerdo (*)":"Costillar de cerdo (*)",
+        "Detalle20":"detalles...",
+
+        "Bolsa de carbón 10kg (origen Argentina)":"Bolsa de carbón 10kg (origen Argentina)",
+        "Detalle21":"detalles..."
+
+    },
+
+    "fr": "Fr",
+    "es": "Es",
+
+    "title": "Hallo React",
+    "content": {
+    "text": "Willkommen bei uns."
+    }
+  
+
+}

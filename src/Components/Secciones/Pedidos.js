@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Flags from 'country-flag-icons/react/3x2'
+
 
 class Pedidos extends Component {
    

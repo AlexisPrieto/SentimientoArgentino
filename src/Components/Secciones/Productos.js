@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { selectFilter, multiSelectFilter,  textFilter} from 'react-bootstrap-table2-filter';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
+import i18n from '../../i18n'
 
 export class Productos extends Component {
+
+    
 
     productos = [ 
         {
             Interno:1,
-            Nombre:'Tira de Asado',    
+            Nombre:i18n.t('Productos.Tira de Asado'),
+            //Nombre:'Tira de Asado',    
             Precio: 24,
             Detalle:'detalles...',
             Imagen:'Img...',
@@ -246,8 +250,7 @@ export class Productos extends Component {
             }];
         return (
             <div>
-                Productos
-
+                {i18n.t('Productos.Productos')}
                 <BootstrapTable
                     bootstrap4
                     keyField='Interno' 

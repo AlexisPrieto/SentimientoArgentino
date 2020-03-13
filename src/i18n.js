@@ -1,32 +1,25 @@
-import i18n from 'i18next'
-import LanguageDetector from 'i18next-browser-languagedetector'
-
-// ruta a los archivos de idiomas
-import common_es from './locales/es/translation.json'
-import common_fr from './locales/fr/translation.json'
-
-i18n.use(LanguageDetector).init({
-  fallbackLng: 'es',
-  debug: true,
-  interpolation: {
-    escapeValue: false, // not needed for react!!
-  },
-  // react i18next special options (optional)
-  react: {
-    wait: false,
-    bindI18n: 'languageChanged loaded',
-    bindStore: 'added removed',
-    nsMode: 'default',
-  },
-  resources: {
-    es: {
-      translation: common_es,
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import Backend from 'i18next-xhr-backend';
+i18n
+  // learn more: https://github.com/i18next/i18next-xhr-backend
+  .use(Backend)
+  // connect with React
+  .use(initReactI18next)
+  // for all options read: https://www.i18next.com/overview/configuration-options
+  .init({
+    debug: true,
+    lng: 'es',
+    fallbackLng: 'es',
+    whitelist: ['es', 'fr'],
+    interpolation: {
+      escapeValue: false, // not needed for react as it escapes by default
     },
-    fr: {
-      translation: common_fr,
+    saveMissing: true,
+    saveMissingTo: 'all',
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      addPath: '/locales/add/{{lng}}/{{ns}}',
     },
-  },
-  
-})
-
-export default i18n
+  });
+export default i18n;

@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import React, { Component } from 'react';
-
+import React, {useState} from 'react';
+import { useTranslation } from 'react-i18next';
 import Toolbar from './Components/Toolbar/Toolbar';
 import SideDrawer from './Components/SideDrawer/SideDrawer';
 import Backdrop from './Components/BackDrop/Backdrop';
@@ -12,32 +11,49 @@ import Galeria from './Components/Secciones/Galeria.js'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-class App extends Component {
-  state = {
-    sideDrawerOpen: false
-  };
+const App = () => {
 
-  drawerToggleClickHandler = () => {
-    this.setState((prevState) => {
+  const [state, setState] = React.useState({
+    sideDrawerOpen: false
+  });
+
+  function drawerToggleClickHandler (e) {
+    setState((prevState) => {
       return {sideDrawerOpen: !prevState.sideDrawerOpen};
     });
   };
 
-  backdropClickHandler = () => {
-    this.setState({sideDrawerOpen: false});
+  function backdropClickHandler (e) {
+    setState({sideDrawerOpen: false});
   };
 
-  render() {
-    let backdrop;
+  function lngEs (e){
+      i18n.changeLanguage("es");
+  };
 
-    if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />
-    }
-    return (
+  function lngFr (e){
+      i18n.changeLanguage("fr");
+  };
+
+  const { i18n } = useTranslation(['translation']);
+
+  
+
+  let backdrop;
+
+  if (state.sideDrawerOpen) {
+    backdrop = <Backdrop click={backdropClickHandler} />
+  }
+  return (
+    <div>
       <Router>
         <div style={{height: '100%'}}>
-          <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-          <SideDrawer show={this.state.sideDrawerOpen} />
+          <Toolbar 
+          drawerClickHandler={drawerToggleClickHandler}
+          lngEs={lngEs}
+          lngFr={lngFr}
+           />
+          <SideDrawer show={state.sideDrawerOpen} />
           {backdrop}
         <Switch>
           <Route exact path="/" component={Inicio}/>
@@ -48,8 +64,8 @@ class App extends Component {
         </Switch>
         </div>
       </Router>
-    );
-  }
-}
-
+      
+    </div>
+  );
+};
 export default App;

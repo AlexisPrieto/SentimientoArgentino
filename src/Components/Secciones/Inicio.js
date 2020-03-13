@@ -18,29 +18,33 @@ export class Inicio extends Component {
                     <div>
                         <img src={img0}/>
                         <div>
-                            <h2 className="Slider-Title"> {i18n.t('Inicio_Title.1')} </h2>
+                            <h2 className="Slider-Title"> {i18n.t('Inicio.Title')} </h2>
                             <p className="Slider-Subtitle">
-                            Ahora podrán disfrutar de un rico asado bien completo o comer unas ricas milanesas sin tener que moverse de sus casas y sin tener que pagar una fortuna por ello...</p>
+                                {i18n.t('Inicio.SubTitle')}
+                            </p>
                         </div>
                     </div>
 
                     <div>
                         <img src={img1}/>
-                        <h2 className="Slider-Title"> Excelencia en Cortes Argentinos </h2>
+                        <h2 className="Slider-Title"> {i18n.t('Inicio.Title')} </h2>
                         <p className="Slider-Subtitle">
-                        Ahora podrán disfrutar de un rico asado bien completo o comer unas ricas milanesas sin tener que moverse de sus casas y sin tener que pagar una fortuna por ello...</p>
+                            {i18n.t('Inicio.SubTitle')}
+                        </p>
                     </div>
                     <div>
                         <img src={img2} />
-                        <h2 className="Slider-Title"> Excelencia en Cortes Argentinos </h2>
+                        <h2 className="Slider-Title"> {i18n.t('Inicio.Title')} </h2>
                         <p className="Slider-Subtitle">
-                        Ahora podrán disfrutar de un rico asado bien completo o comer unas ricas milanesas sin tener que moverse de sus casas y sin tener que pagar una fortuna por ello...</p>
+                            {i18n.t('Inicio.SubTitle')}
+                        </p>
                     </div>
                     <div>
                         <img src={img3} />
-                        <h2 className="Slider-Title"> Excelencia en Cortes Argentinos </h2>
+                        <h2 className="Slider-Title"> {i18n.t('Inicio.Title')} </h2>
                         <p className="Slider-Subtitle">
-                        Ahora podrán disfrutar de un rico asado bien completo o comer unas ricas milanesas sin tener que moverse de sus casas y sin tener que pagar una fortuna por ello...</p>
+                            {i18n.t('Inicio.SubTitle')}
+                        </p>
                     </div>
                     </Carousel>
             </div>
