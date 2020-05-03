@@ -3,8 +3,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to right top, #3594f5, #010d3e );/* #521751;*/
-    height: 80px;
+    background:linear-gradient(to right top, #188aff, #000d42 );
+    /*background: linear-gradient(to right top, #3594f5, #010d3e );/* #521751;*/
+    height: 100px;
     z-index:10; /*<--- crack*/
   }
   
@@ -64,6 +65,12 @@
     }
   
     .toolbar__logo {
-      margin-left: 0;
+      margin-left: 80px;
+    }
+
+    .productos_tabla{
+      width: 50%;
+      font-size: large;
+      margin-top: 5%;
     }
   }

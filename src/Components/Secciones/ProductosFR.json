@@ -1,24 +1,12 @@
 {
-    "Menu":{
-    "Inicio": "Inicio",
-    "Productos": "Productos",
-    "Pedidos": "Pedidos",
-    "Galeria": "Galeria"
-    },
-
-    "Inicio":{
-        "Title": "ES-Excelencia en Cortes Argentinos",
-        "SubTitle": "ES-Ahora podrán disfrutar de un rico asado bien completo o comer unas ricas milanesas sin tener que moverse de sus casas y sin tener que pagar una fortuna por ello..."
-    },
-
     "Productos":{
 
         "Productos": [
             {
                 "Interno":1,
-                "Nombre":"Tira de Asado FR",
+                "Nombre":"Tira de Asado",
                 "Precio": 24,
-                "Detalle":"detalles...",
+                "Detalle": "Il n’y a pas de comparaison dans les coupes Suisses. Il s’agit de travers de côtes de bœuf coupée dans leur longueur.La comparaison peut se faire avec le «Spare Ribs» américain, mais les argentins laissent beaucoup plus de viande autour des côtes. C’est un incontournable de l’asado argentin.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -26,7 +14,7 @@
                 "Interno":2,
                 "Nombre":"Vacio",
                 "Precio":26,
-                "Detalle":"detalles...",
+                "Detalle":"Viande de bœuf juteuse. Peut aussi se faire au four. Cette coupe peut se comparer à la bavette suisse.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -34,7 +22,7 @@
                 "Interno":3,
                 "Nombre":"Chorizo",
                 "Precio":26,
-                "Detalle":"detalles...",
+                "Detalle":"Saucisse à rôtir, mélange de viande de bœuf et de porc. Pas épicée, elle ressemble plus à la cipollata de porc faite en Suisse qu’au chorizo espagnol ou à la merguez.",
                 "Imagen":"Img...",
                 "Rubro": 1
             },
@@ -42,7 +30,7 @@
                 "Interno":4,
                 "Nombre":"Morcilla",
                 "Precio":20,
-                "Detalle":"detalles...",
+                "Detalle":"Boudin noir au goût fin, raffiné, finement épicé. Très différent duboudin fait en Suisse.",
                 "Imagen":"Img...",
                 "Rubro": 1
             },
@@ -50,7 +38,7 @@
                 "Interno":5,
                 "Nombre":"Molleja",
                 "Precio":26,
-                "Detalle":"detalles...",
+                "Detalle":"Riz de veau.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -58,7 +46,7 @@
                 "Interno":6,
                 "Nombre":"Chinchulin",
                 "Precio":20,
-                "Detalle":"detalles...",
+                "Detalle":"Intestin grêle.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -66,7 +54,7 @@
                 "Interno":7,
                 "Nombre":"Entraña",
                 "Precio":23,
-                "Detalle":"detalles...",
+                "Detalle":"Viande de bœuf comparable en Suisse à l’onglet",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -74,7 +62,7 @@
                 "Interno":8,
                 "Nombre":"Colita de cuadril",
                 "Precio":38,
-                "Detalle":"detalles...",
+                "Detalle":"C’est une coupe de bœuf en forme de triangle. Elle peut être comparée à l’aiguillette baronne. Ce fait aussi très bien au four.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -82,7 +70,7 @@
                 "Interno":9,
                 "Nombre":"Tapa de Cuadril (Picaña/Picanha)",
                 "Precio":42,
-                "Detalle":"detalles...",
+                "Detalle":"Ressemble au rumpsteak ou au steak de culotte.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -90,7 +78,7 @@
                 "Interno":10,
                 "Nombre":"Bondiola de cerdo",
                 "Precio":18,
-                "Detalle":"detalles...",
+                "Detalle":"Collet de porc.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -114,7 +102,7 @@
                 "Interno":13,
                 "Nombre":"Matambre de Vaca",
                 "Precio":23,
-                "Detalle":"detalles...",
+                "Detalle":"Ressemble au flanc de bœuf (en anglais flank steak). Il s’agit d’une coupe fine et maigre. Peut aussi se préparer au four ou dans une poêle.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -122,7 +110,7 @@
                 "Interno":14,
                 "Nombre":"Matambrito de Cerdo",
                 "Precio":22,
-                "Detalle":"detalles...",
+                "Detalle":"Ressemble au flanc de porc.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -130,7 +118,7 @@
                 "Interno":15,
                 "Nombre":"Peceto ",
                 "Precio":36,
-                "Detalle":"detalles...",
+                "Detalle":"Ressemble au rôti de boeuf.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -138,7 +126,7 @@
                 "Interno":16,
                 "Nombre":"Ojo de Bife",
                 "Precio":50,
-                "Detalle":"detalles...",
+                "Detalle":"Ressemble au faux filet (rib eye en anglais).",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -146,7 +134,7 @@
                 "Interno":17,
                 "Nombre":"Entrecote (origen Argentina)",
                 "Precio":56,
-                "Detalle":"detalles...",
+                "Detalle":"Ressemble à l’entrecôte. Provenance Argentine.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -154,13 +142,13 @@
                 "Interno":18,
                 "Nombre":"Lomo (origen Argentina)",
                 "Precio":78,
-                "Detalle":"detalles...",
+                "Detalle":"Ressemble au filet ou au chateaubriand (tenderloin en anglais). Provenance Argentine.",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
             {
                 "Interno":19,
-                "Nombre":"Milanesa ",
+                "Nombre":"Milanesa",
                 "Precio":44,
                 "Detalle":"detalles...",
                 "Imagen":"Img...",
@@ -170,7 +158,7 @@
                 "Interno":20,
                 "Nombre":"Costillar de cerdo (*)",
                 "Precio":24,
-                "Detalle":"detalles...",
+                "Detalle":"Ressemble aux côtelettes de porc (pork ribs en anglais).",
                 "Imagen":"Img...",
                 "Rubro": 0
             },
@@ -178,7 +166,7 @@
                 "Interno":21,
                 "Nombre":"Bolsa de carbón 10kg (origen Argentina)",
                 "Precio":23,
-                "Detalle":"detalles...",
+                "Detalle":"Charbon de bois fait en argentine et oui...les charbons de bois ne se ressemblent pas et in fluencent le fumet de la viande.",
                 "Imagen":"Img...",
                 "Rubro": 3
             },
@@ -194,12 +182,6 @@
     },
 
     "fr": "Fr",
-    "es": "Es",
-
-    "title": "Hallo React",
-    "content": {
-    "text": "Willkommen bei uns."
-    }
-  
+    "es": "Es"
 
 }

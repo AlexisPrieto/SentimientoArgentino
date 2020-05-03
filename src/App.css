@@ -43,12 +43,13 @@
   bottom: 25%;
   left: 50%;
   margin-left: -45%;
-  width: 40%;
+  /*width: 40%;*/
   border-radius: 10px;
   /*background: #0000008c;*/
   color: #fff;
   padding: 10px;
-  font-size: 40px;
+  /*font-size: 40px;*/
+  font-size: 350%;
   text-align: center;
   /* opacity: .7; */
   transition: opacity .35s ease-in-out;
@@ -56,10 +57,10 @@
 }
 
 .Slider-Subtitle{
- 
+   
  /* transition: all .5s ease-in-out; */
  position: absolute;
- bottom: 5%;
+ bottom: 13%;
  left: 50%;
  margin-left: -45%;
  width: 50%;
@@ -67,9 +68,47 @@
  background: #0000008c;
  color: #fff;
  padding: 10px;
- font-size: 20px;
+ font-size: 23px;
  text-align: center;
- opacity: .9;
+ opacity: 1;
  transition: opacity .35s ease-in-out;
+}
+
+.selection-cell{
+  display: table-column;
+}
+
+.inicio-img{
+
+    display: flex;
+    align-items: flex-end;
+    /*justify-content: center;*/
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    min-height: -webkit-fill-available;
+
+}
+
+@media all and (max-width: 768px) {
+  .inicio-img{
+    display: flex;
+    align-items: flex-end;
+    /*justify-content: center;*/
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    height: 540px;
+    min-height: auto;
+}
+.Slider-Subtitle {
+  width: auto;
+  bottom: auto;
+}
+
+.Slider-Title{
+  bottom: auto;
+  align-self: start;
+  }
 }
 

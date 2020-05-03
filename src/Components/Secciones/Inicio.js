@@ -14,9 +14,17 @@ export class Inicio extends Component {
         return (
             
             <div>
-                <Carousel infiniteLoop useKeyboardArrows /*autoPlay*/ showStatus={false} showThumbs={false} dynamicHeight>
+                <div>
+                    <div className="inicio-img" style={{'backgroundImage': 'url('+img1+')'}} />
+                    <h2 className="Slider-Title"> {i18n.t('Inicio.Title')} </h2>
+                    <p className="Slider-Subtitle">
+                        {i18n.t('Inicio.SubTitle')}
+                    </p>
+                </div>
+                {/*
+                <Carousel infiniteLoop /*useKeyboardArrows*/ /*autoPlay showIndicators={false} showArrows={false} showStatus={false} showThumbs={false} dynamicHeight>
                     <div>
-                        <img src={img0}/>
+                        <img src={img1}/>
                         <div>
                             <h2 className="Slider-Title"> {i18n.t('Inicio.Title')} </h2>
                             <p className="Slider-Subtitle">
@@ -24,9 +32,9 @@ export class Inicio extends Component {
                             </p>
                         </div>
                     </div>
-
+                    {/*
                     <div>
-                        <img src={img1}/>
+                        <img src={img0}/>
                         <h2 className="Slider-Title"> {i18n.t('Inicio.Title')} </h2>
                         <p className="Slider-Subtitle">
                             {i18n.t('Inicio.SubTitle')}
@@ -47,6 +55,7 @@ export class Inicio extends Component {
                         </p>
                     </div>
                     </Carousel>
+                    */}
             </div>
         )
     }

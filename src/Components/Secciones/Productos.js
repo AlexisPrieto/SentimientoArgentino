@@ -1,12 +1,14 @@
 import React, { Component, useState } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { selectFilter, multiSelectFilter,  textFilter} from 'react-bootstrap-table2-filter';
-
+import '../Toolbar/Toolbar.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import { useTranslation } from 'react-i18next';
 import ProducFR from './ProductosFR.json';
 import ProducES from './ProductosES.json'
+import { render } from '@testing-library/react';
+import number from 'react-bootstrap-table2-filter/lib/src/components/number';
 
 const Productos = () => {
 
@@ -42,6 +44,7 @@ const Productos = () => {
                 dataField: 'Precio',
                 text: 'Precio',
                 sort: true,
+                headerAlign: 'center',
                 align: 'center',
                 formatter: (cell) => 
                     <span>
@@ -51,14 +54,17 @@ const Productos = () => {
             {
                 dataField: 'Detalle',
                 text: 'Detalle',
+                hidden: true,
             },
             {
                 dataField: 'Imagen',
                 text: 'Imagen',
+                hidden: true,
             },
             {
                 dataField: 'Rubro',
                 text: 'Rubro',
+                hidden: true,
                 formatter: cell => selectOptions[cell],
                 filter: 
                     selectFilter({
@@ -68,24 +74,57 @@ const Productos = () => {
                     })
             }];
 
+            const expandRow = {
+                onlyOneExpanding: true,
+                renderer: row => {
+                    if (i18n.language ==='fr'){
+                        return (
+                            <div style={{padding: '0% 0% 0% 7%'}}>
+                                <p>{`${row.Detalle}`}</p>
+                            </div>)
+                    }else{
+                        return (
+                            <div  style={{padding: 0}}>
+                            </div>
+                            )
+                    }
+                },
+                
+                nonExpandable: i18n.language ==='es' ? [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]: []
+
+              };       
 
             const defaultSorted = [{
                 dataField: 'Nombre',
                 order: 'desc'
             }];
-        return (
-            <div>
+            
+            const selectRow = {
+                mode: 'radio',
+                clickToSelect: true,
+                style: { background: 'linear-gradient(to top, #78b9ff, #a9d3ff, #daebff, rgb(241, 247, 255), rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255), rgb(255, 255, 255))', 'font-weight': 'bolder'},
+                /*style: { background: 'linear-gradient(to top, #2692ff, #ffffff )', 'font-weight': 'bolder'},*/
+                clickToExpand: true
+              };
+             
 
-                <BootstrapTable
-                    bootstrap4
-                    keyField='Interno' 
-                    data= {i18n.language ==='es'? state.productosES : state.productosFR}
-                    columns={ columns } 
-                    defaultSorted={ defaultSorted }  
-                    noDataIndication="No hay datos para mostrar" 
-                    bordered={ false }
-                    filter={ filterFactory()}
-                />
+        return (
+            <div style={{'text-align': '-webkit-center'}}>
+                <div  className="productos_tabla">
+                    <BootstrapTable
+                    
+                        bootstrap4
+                        keyField='Interno' 
+                        data= {i18n.language ==='es'? state.productosES : state.productosFR}
+                        columns={ columns } 
+                        expandRow={expandRow}
+                        defaultSorted={ defaultSorted }  
+                        noDataIndication="No hay datos para mostrar" 
+                        bordered={ false }
+                        filter={ filterFactory()}
+                        selectRow={ selectRow }
+                    />
+                </div>
             </div>
         )
 }

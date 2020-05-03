@@ -24,24 +24,33 @@ const Toolbar = props => {
         </div>
         <div className="toolbar__logo"><Link to="/">Sentimiento Argentino</Link></div>
         <div className="spacer" />
-        <div className="toolbar_navigation-items">
+        <div className="toolbar_navigation-items" style={{padding: '0% 7%'}}>
             <ul>
                 <li><Link to="/Inicio">Inicio</Link></li>
                 <li><Link to="/Productos">Productos</Link></li>
                 <li><Link to="/Pedidos">Pedidos</Link></li>
                 <li><Link to="/Galeria">Galeria</Link></li>
-                
-                <button type="button" onClick={props.lngEs}>
-                  <Flags.ES title="Es" className="..."/>
-                  {t('translation:es')}
-                </button>
 
-                <button type="button" onClick={props.lngFr}>
-                  <Flags.FR title="Fr" className="..."/>
-                  {t('translation:fr')}
-                </button>
-
-            </ul>
+            </ul> 
+        </div>
+        <div style={{padding: '0% 0.5% 0% 0%'}}>
+          <Flags.ES onClick={props.lngEs}
+            style={{
+              border: 'solid white 1px',
+              /*width: '1.5em',*/
+              height: '1.5em'}}
+              
+            className="..."/>
+          {/*t('translation:es')*/}
+        </div>
+        <div>
+          <Flags.FR
+            onClick={props.lngFr}
+            style={{
+              border: 'solid white 1px',
+              height: '1.5em'}}
+            className="..."/>
+          {/*t('translation:fr')*/}
         </div>
     </nav>
   </header>
