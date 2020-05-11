@@ -38,33 +38,13 @@
 }
 
 .Slider-Title{
-  /* transition: all .5s ease-in-out; */
-  position: absolute;
-  bottom: 25%;
-  left: 50%;
-  margin-left: -45%;
-  /*width: 40%;*/
-  border-radius: 10px;
-  /*background: #0000008c;*/
-  color: #fff;
-  padding: 10px;
-  /*font-size: 40px;*/
   font-size: 350%;
   text-align: center;
-  /* opacity: .7; */
-  transition: opacity .35s ease-in-out;
   text-shadow: -5px 3px 5px rgb(0, 0, 0);
 }
 
 .Slider-Subtitle{
-   
  /* transition: all .5s ease-in-out; */
- position: absolute;
- bottom: 13%;
- left: 50%;
- margin-left: -45%;
- width: 50%;
- border-radius: 10px;
  background: #0000008c;
  color: #fff;
  padding: 10px;
@@ -72,6 +52,7 @@
  text-align: center;
  opacity: 1;
  transition: opacity .35s ease-in-out;
+
 }
 
 .selection-cell{
@@ -90,7 +71,45 @@
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) {
+.Slider-Title{
+  /* transition: all .5s ease-in-out; */
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  margin-left: -45%;
+  width: 50%;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  align-self: start;
+  transition: opacity .35s ease-in-out;
+}
+
+.Slider-Subtitle{
+  /* transition: all .5s ease-in-out; */
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  margin-left: -45%;
+  width: 50%;
+  border-radius: 10px;
+ }
+}
+
+@media all and (max-width: 767px) {
+
+  .Slider-Title{
+    align-self: center;
+    padding: 0% 5%;
+    margin-top: -30%;
+  }
+  
+  .Slider-Subtitle{
+    align-self: flex-end;
+    position: fixed;
+  }
+
   .inicio-img{
     display: flex;
     align-items: flex-end;
@@ -99,16 +118,8 @@
     background-position: bottom;
     color: white;
     height: 540px;
-    min-height: auto;
-}
-.Slider-Subtitle {
-  width: auto;
-  bottom: auto;
+    min-height: auto; 
 }
 
-.Slider-Title{
-  bottom: auto;
-  align-self: start;
-  }
 }
 

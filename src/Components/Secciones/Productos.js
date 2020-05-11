@@ -33,17 +33,16 @@ const Productos = () => {
                 dataField: 'Interno',
                 text: '#',
                 hidden: true,
-                sort: true
             },             
             {
                 dataField: 'Nombre',
                 text: 'Nombre',    
-                sort: true        
+                //sort: true        
             },    
             {
                 dataField: 'Precio',
                 text: 'Precio',
-                sort: true,
+                //sort: true,
                 headerAlign: 'center',
                 align: 'center',
                 formatter: (cell) => 
