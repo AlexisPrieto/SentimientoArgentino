@@ -14,7 +14,7 @@ export class Inicio extends Component {
         return (
             
             <div>
-                <div className="inicio-img" style={{'backgroundImage': 'url('+img1+')'}}>
+                <div className="inicio-img" style={{'backgroundImage': 'url('+img1+')', height: '88vh'}}>
                     <div  />
                     <h2 className="Slider-Title"> {i18n.t('Inicio.Title')} </h2>
                     <p className="Slider-Subtitle">

@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+  .bg{
+      padding: 0% 15%;
+      height: 90vh;
+      color: white;
+  }
+  .bg1{
+      background: linear-gradient(to left, #00000050, #00000030, #00000000, #00000000,#00000000,
+       #00000000,#00000000,#00000000,#00000000,#00000000,#00000000, #00000000, #00000000, #00000030, #00000050) , url('../../../Assets/Background/1.jpg') center;   
+  }
+
+  .bg2{
+      background: linear-gradient(to left,#1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00) , url('../../../Assets/Background/2.jpg') center;   
+  }
+  .bg3{
+      background: linear-gradient(to left,#1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00) , url('../../../Assets/Background/3.jpg') center;   
+  }
+  .bg4{
+      background: linear-gradient(to left,#1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00) , url('../../../Assets/Background/4.jpg') center;   
+  }
+  .bg5{
+      background: linear-gradient(to left,#1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00) , url('../../../Assets/Background/5.jpg') center;   
+  }
+  
+}
+
+@media (min-width: 769px) {
+  .bg{
+      padding: 0% 30%;
+      height: 90vh;
+      /*background: linear-gradient(to left, #1016da00, #1016da00, #1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00, #1016da00, #1016da00) , url('../../Assets/Background/Madera1.jpg') center;   
+  */}
+
+  .bg1{
+      background: linear-gradient(to left, #00000050, #00000030, #00000000, #00000000,#00000000, #00000000,#00000000,
+      #00000000,#00000000,#00000000,#00000000, #00000000, #00000000, #00000030, #00000050) , url('../../../Assets/Background/1.jpg') center;   
+  }
+
+  .bg2{
+      background: linear-gradient(to left, #1016da00, #1016da00, #1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00, #1016da00, #1016da00) , url('../../../Assets/Background/2.jpg') center;   
+  }
+  .bg3{
+      background: linear-gradient(to left, #1016da00, #1016da00, #1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00, #1016da00, #1016da00) , url('../../../Assets/Background/3.jpg') center;   
+  }
+
+  .bg4{
+      background: linear-gradient(to left, #1016da00, #1016da00, #1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00, #1016da00, #1016da00) , url('../../../Assets/Background/4.jpg') center;   
+  }
+
+  .bg5{
+      background: linear-gradient(to left, #1016da00, #1016da00, #1016da00, #ffffff, #ffffff, #ffffff, #ffffff,
+       #ffffff, #ffffff, #ffffff, #1016da00, #1016da00, #1016da00) , url('../../../Assets/Background/5.jpg') center;   
+  }
+}

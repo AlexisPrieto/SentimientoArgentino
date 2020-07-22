@@ -60,7 +60,7 @@ const App = () => {
           <Route exact path="/Inicio" component={Inicio}/>
           <Route exact path="/Productos" component={Productos}/>
           <Route exact path="/Pedidos" component={Pedidos}/>
-          <Route exact path="/Galeria" component={Galeria}/>
+          {/*<Route exact path="/Galeria" component={Galeria}/>*/}
         </Switch>
         </div>
       </Router>

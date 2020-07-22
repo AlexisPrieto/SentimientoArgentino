@@ -29,8 +29,7 @@ const Toolbar = props => {
                 <li><Link to="/Inicio">Inicio</Link></li>
                 <li><Link to="/Productos">Productos</Link></li>
                 <li><Link to="/Pedidos">Pedidos</Link></li>
-                <li><Link to="/Galeria">Galeria</Link></li>
-
+                {/*<li><Link to="/Galeria">Galeria</Link></li>*/}
             </ul> 
         </div>
         <div style={{padding: '0% 0.5% 0% 0%'}}>

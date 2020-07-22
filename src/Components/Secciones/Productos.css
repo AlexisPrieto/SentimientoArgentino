@@ -1,0 +1,25 @@
+
+
+@media (max-width: 768px) {
+    .productos_tabla{
+        width: 75%;
+        font-size: large;
+      }
+      .table{
+        background: rgba(0,0,0,0.4);
+        color: white;
+        font-size: larger;
+      }
+}
+
+@media (min-width: 769px) {
+    .productos_tabla{
+        width: 50%;
+        font-size: large;
+      }
+      .table{
+        background: rgba(0,0,0,0.4);
+        color: white;
+        font-size: larger;
+      }
+}
